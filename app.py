@@ -1,7 +1,7 @@
 import streamlit as st
-from modules.trivia import trivia_section
-from modules.riddles import riddles_section
-from modules.hangman import hangman_section
+from trivia import trivia_section
+from riddles import riddles_section
+from hangman import hangman_section
 
 st.set_page_config(layout="wide")
 
