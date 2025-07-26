@@ -5,10 +5,7 @@ from rapidfuzz import fuzz
 
 
 def load_riddles():
-    # Go up one level from /modules folder, then into /data/riddles.json
-    base_dir = os.path.dirname(os.path.dirname(__file__))
-    path = os.path.join(base_dir, "data", "riddles.json")
-    with open(path, "r") as f:
+    with open("riddles.json", "r") as f:
         return json.load(f)
 
 
