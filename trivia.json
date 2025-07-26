@@ -1,0 +1,40 @@
+[
+    {
+        "question": "Who lives next door to my parents?",
+        "options": [
+            "Crazy Jane",
+            "Not Crazy Jane"
+        ],
+        "answer": "Not Crazy Jane"
+    },
+    {
+        "question": "What time does my alarm go off when it is not 04:38?",
+        "options": [
+            "03:58",
+            "03:48",
+            "04:08",
+            "05:38"
+        ],
+        "answer": "03:58"
+    },
+    {
+        "question": "What is the correct spelling",
+        "options": [
+            "Claire",
+            "Clare",
+            "Klaire",
+            "Khlaire"
+        ],
+        "answer": "Khlaire"
+    },
+    {
+        "question": "What do you think I think is the rarest thing one of us has said so far",
+        "options": [
+            "Alchoholic joke",
+            "Addy nickname",
+            "Sister/tongue",
+            "There's no such thing as bad ju ju"
+        ],
+        "answer": "Sister/tongue"
+    }
+]

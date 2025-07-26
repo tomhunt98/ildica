@@ -1,0 +1,51 @@
+[
+    {
+        "riddle": "What has to be broken before you can use it?",
+        "answers": [
+            "an egg",
+            "egg",
+            "a egg"
+        ]
+    },
+    {
+        "riddle": "I'm tall when I'm young, and I'm short when I'm old. What am I?",
+        "answers": [
+            "a candle",
+            "candle"
+        ]
+    },
+    {
+        "riddle": "The more of me you take, the more you leave behind. What am I?",
+        "answers": [
+            "footsteps",
+            "footstep",
+            "foot prints",
+            "footprints",
+            "tracks",
+            "steps"
+        ]
+    },
+    {
+        "riddle": "What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?",
+        "answers": [
+            "a river",
+            "river"
+        ]
+    },
+    {
+        "riddle": "What comes once in a minute, twice in a moment, but never in a thousand years",
+        "answers": [
+            "m",
+            "the letter m",
+            "letter m"
+        ]
+    },
+    {
+        "riddle": "I have keys but no locks. I have space but no room. You can enter, but you can’t go outside. What am I?",
+        "answers": [
+            "a keyboard",
+            "keyboard",
+            "the keyboard"
+        ]
+    }
+]
