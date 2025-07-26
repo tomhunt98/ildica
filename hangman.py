@@ -53,7 +53,7 @@ def hangman_section():
         return ' '.join([letter if letter in guessed else '_' for letter in word])
 
     # Game over screen
-     if st.session_state.game_over:
+    if st.session_state.game_over:
             st.markdown(
                 f"### {draw_hangman_emoji(st.session_state.wrong_guesses)}")
     
