@@ -6,7 +6,7 @@ import os
 def trivia_section():
     st.header("🧠 Trivia Challenge")
 
-    with open(os.path.join("data", "trivia.json")) as f:
+    with open(os.path("trivia.json") as f:
         questions = json.load(f)
 
     if "trivia_index" not in st.session_state:
