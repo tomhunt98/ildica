@@ -1,22 +1,20 @@
-import streamlit as st
-import json
-import os
-
-
 def trivia_section():
     st.header("🧠 Trivia Challenge")
 
     with open("trivia.json") as f:
         questions = json.load(f)
 
+    st.write(f"Loaded {len(questions)} questions")  # Debug line
+
     if "trivia_index" not in st.session_state:
         st.session_state.trivia_index = 0
         st.session_state.trivia_score = 0
 
+    st.write(f"Current trivia index: {st.session_state.trivia_index}")  # Debug line
+
     if st.session_state.trivia_index >= len(questions):
-        st.session_state["trivia_complete"] = True
         st.success(
-            f"🎉 You completed the trivia Pretty Lady! Score: {st.session_state.trivia_score} / {len(questions)}")
+            f"🎉 You completed the trivia! Score: {st.session_state.trivia_score} / {len(questions)}")
         return True
 
     q = questions[st.session_state.trivia_index]
