@@ -1,3 +1,8 @@
+import streamlit as st
+import json
+import os
+
+
 def trivia_section():
     st.header("🧠 Trivia Challenge")
 
