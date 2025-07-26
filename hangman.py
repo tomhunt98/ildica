@@ -53,23 +53,21 @@ def hangman_section():
         return ' '.join([letter if letter in guessed else '_' for letter in word])
 
     # Game over screen
-    if st.session_state.game_over:
-        if st.session_state.won:
-            st.success(
-                f"Woohoo, well done Bosnian Empress **{st.session_state.word}** 🎉")
-        else:
-            st.error(f"The word was **{st.session_state.word}** 😢")
-
-        st.markdown(
-            f"### {draw_hangman_emoji(st.session_state.wrong_guesses)}")
-
-        if st.button("Play Again"):
-            reset_game()
-            st.experimental_rerun()
-            return False
-
-        # Done with hangman section until restarted or play again
-        return True
+     if st.session_state.game_over:
+            st.markdown(
+                f"### {draw_hangman_emoji(st.session_state.wrong_guesses)}")
+    
+            if st.session_state.won:
+                st.success(
+                    f"Woohoo, well done Bosnian Empress **{st.session_state.word}** 🎉")
+                return True  # ✅ ONLY return True if they won
+    
+            else:
+                st.error(f"The word was **{st.session_state.word}** 😢")
+                if st.button("Play Again"):
+                    reset_game()
+                    st.experimental_rerun()
+                return False  # 👈 don't advance if they lost
 
     # Show current guessing state
     st.write("Word to guess:")
