@@ -66,7 +66,7 @@ def hangman_section():
                 st.error(f"The word was **{st.session_state.word}** 😢")
                 if st.button("Play Again"):
                     reset_game()
-                    st.experimental_rerun()
+                    st.rerun()
                 return False  # 👈 don't advance if they lost
 
     # Show current guessing state
